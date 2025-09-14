@@ -138,6 +138,8 @@ async def taskScheduler():
     except Exception:
         Paths.HERO_IMAGE = Paths.DEFAULT_HERO
 
+    utils.get_peer_type="channel"
+
     MSG.sent_msg = await colab_bot.send_message(chat_id=DUMP_ID, text=src_text[0])
 
     if len(src_text) > 1:
