@@ -40,6 +40,7 @@ from colab_leecher.utility.variables import (
     TaskError,
 )
 
+utils.get_peer_type="channel"
 
 async def task_starter(message, text):
     global BOT
